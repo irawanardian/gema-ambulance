@@ -36,20 +36,14 @@ const TentangKami = () => {
           luar kota, pengantaran jenazah dalam kota dan luar kota, GEMA pun
           menyediakan perlengkapan kedukaan seperti Peti Jenazah, Formalin.
         </p>
-        <motion.button
-          variants={fadeIn("up", 0.7)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="mt-4 bg-[#63208A] text-white py-2 px-4 rounded-lg hover:bg-purple-800 transition duration-300"
-        >
+        <button className="mt-4 bg-[#63208A] text-white py-2 px-4 rounded-lg hover:bg-purple-800 transition duration-300">
           <a
             href="https://wa.me/6287721607666?text=Hallo Ambulance GEMA"
             target="_blank"
           >
             Hubungi Kami
           </a>
-        </motion.button>
+        </button>
       </motion.div>
     </motion.div>
   );

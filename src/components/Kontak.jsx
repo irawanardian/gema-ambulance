@@ -34,6 +34,7 @@ const Kontak = () => {
           <h3 className="font-semibold">Alamat</h3>
           <p>
             JL. Raya Pitara GG. Swadaya 2 <br></br> RT. 05 RW. 07 No. 28 Depok
+            Jawa Barat
           </p>
         </div>
       </div>

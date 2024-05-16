@@ -27,7 +27,7 @@ const features = [
     icon: <FaSync />,
     title: "Fleksibilitas",
     description:
-      "Berkomitmen untuk menyesuaikan layanan dengan kebutuhan unik setiap klien.",
+      "Berkomitmen untuk menyesuaikan layanan dengan kebutuhan yang berbeda-beda dari setiap klien.",
   },
 ];
 

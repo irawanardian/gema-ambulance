@@ -1,12 +1,12 @@
 import React from "react";
 import LayananCard from "./LayananCard";
 
-import image1 from "../assets/imgLayananSatu.png";
-import image2 from "../assets/imgLayananDua.png";
-import image3 from "../assets/imgLayananTiga.png";
-import image4 from "../assets/imgLayananEmpat.png";
-import image5 from "../assets/imgLayananLima.png";
-import image6 from "../assets/imgLayananEnam.png";
+import image1 from "../assets/emergencyResponse.jpg";
+import image2 from "../assets/antarJemputPasien.jpg";
+import image3 from "../assets/pengantaranJenazah.jpg";
+import image4 from "../assets/petiJenazah.jpg";
+import image5 from "../assets/logo-gema-new.png";
+import image6 from "../assets/standByeEvent.jpg";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -32,19 +32,20 @@ const layanan = [
   },
   {
     image: image4,
-    title: "Pengantaran Jenazah",
-    description: "Layanan pengantaran jenazah dalam kota dan luar kota.",
+    title: "Peti Jenazah",
+    description:
+      "Layanan peti jenazah yang GEMA sediakan, info klik tomboh dibawah",
     buttonText: "PESAN SEKARANG",
   },
   {
     image: image5,
-    title: "Pengantaran Jenazah",
-    description: "Layanan pengantaran jenazah dalam kota dan luar kota.",
+    title: "Formalin",
+    description: "Untuk list lebih lanjut, silahkan klik tombol dibawah",
     buttonText: "PESAN SEKARANG",
   },
   {
     image: image6,
-    title: "Pengantaran Jenazah",
+    title: "Standbye Event / Shooting",
     description: "Layanan pengantaran jenazah dalam kota dan luar kota.",
     buttonText: "PESAN SEKARANG",
   },
