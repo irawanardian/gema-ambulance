@@ -80,7 +80,7 @@ const NavigationBar = () => {
 
       {/* start navigation responsif */}
       <div
-        className={`text-white space-y-4 px-4 pt-24 pb-5 bg-[#63208A] ${
+        className={`z-10 text-white space-y-4 px-4 pt-24 pb-5 bg-[#63208A] ${
           isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
         }`}
       >
