@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const images = [
-  "public/imgLayananSatu.png",
-  "public/imgLayananDua.png",
-  "public/imgLayananTiga.png",
-  "public/imgLayananEmpat.png",
-  "public/imgLayananLima.png",
-  "public/imgLayananEnam.png",
-  "public/imgLayananLima.png",
-  "public/imgLayananEnam.png",
+  "/imgLayananSatu.png",
+  "/imgLayananDua.png",
+  "/imgLayananTiga.png",
+  "/imgLayananEmpat.png",
+  "/imgLayananLima.png",
+  "/imgLayananEnam.png",
+  "/imgLayananLima.png",
+  "/imgLayananEnam.png",
 ];
 
 const Galeri = () => {
