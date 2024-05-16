@@ -33,7 +33,7 @@ const Beranda = () => {
             className="md:w-3/5"
           >
             <h2 className="md:text-6xl text-4xl font-bold text-white mb-3 leading-relaxed">
-              Pilihan yang sangat tepat anda memilih kami
+              Pilihan yang sangat tepat anda memilih kami Cuy!!!
             </h2>
             <p className="text-white text-1xl mb-5">
               Gifchari Emergency Medical Ambulance (GEMA) adalah jasa
