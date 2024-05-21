@@ -2,11 +2,12 @@ import React from "react";
 import LayananCard from "./LayananCard";
 
 import image1 from "../assets/emergencyResponse.jpg";
-import image2 from "../assets/antarJemputPasien.jpg";
+import image2 from "../assets/fullMedis.jpg";
 import image3 from "../assets/pengantaranJenazah.jpg";
 import image4 from "../assets/petiJenazah.jpg";
 import image5 from "../assets/logo-gema-new.png";
 import image6 from "../assets/standByeEvent.jpg";
+import image7 from "../assets/antarJemputPasien.jpg";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -20,8 +21,8 @@ const layanan = [
   },
   {
     image: image2,
-    title: "Antar Jemput Pasien",
-    description: "Layanan antar jemput pasien dalam kota dan luar kota.",
+    title: "Ambulance Full Medis",
+    description: "Layanan Ambulance Full Medis dan Respon Cepat Tanggap",
     buttonText: "PESAN SEKARANG",
   },
   {
@@ -47,6 +48,12 @@ const layanan = [
     image: image6,
     title: "Standbye Event / Shooting",
     description: "Layanan pengantaran jenazah dalam kota dan luar kota.",
+    buttonText: "PESAN SEKARANG",
+  },
+  {
+    image: image7,
+    title: "Antar Jemput Pasien",
+    description: "Layanan Ambulance antar jemput pasien",
     buttonText: "PESAN SEKARANG",
   },
 ];

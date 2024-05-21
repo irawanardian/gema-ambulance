@@ -3,14 +3,13 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const images = [
-  "/imgLayananSatu.png",
-  "/imgLayananDua.png",
-  "/imgLayananTiga.png",
-  "/imgLayananEmpat.png",
-  "/imgLayananLima.png",
-  "/imgLayananEnam.png",
-  "/imgLayananLima.png",
-  "/imgLayananEnam.png",
+  "/antarJemputPasien.jpg",
+  "/emergencyResponse.jpg",
+  "/fullMedis.jpg",
+  "/pengantaranJenazah.jpg",
+  "/petiJenazah.jpg",
+  "/standByeEvent.jpg",
+  "/dalemFullMedis.jpg",
 ];
 
 const Galeri = () => {
@@ -40,7 +39,7 @@ const Galeri = () => {
             <img
               src={images}
               alt={`Galeri ${index}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
             />
           </div>
         ))}

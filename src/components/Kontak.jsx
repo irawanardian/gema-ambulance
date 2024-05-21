@@ -18,14 +18,14 @@ const Kontak = () => {
             <FaWhatsapp className="text-7xl text-green-500" />
           </div>
           <h3 className="font-semibold">WhatsApp</h3>
-          <p>0895 - 5454 - 2323</p>
+          <p>085971104154</p>
         </div>
         <div>
           <div className="flex justify-center items-center mb-4">
             <FaPhoneAlt className="text-7xl text-red-500" />
           </div>
           <h3 className="font-semibold">Telepon</h3>
-          <p>0895 - 5454 - 2323</p>
+          <p>085971104154</p>
         </div>
         <div>
           <div className="flex justify-center items-center mb-4">
