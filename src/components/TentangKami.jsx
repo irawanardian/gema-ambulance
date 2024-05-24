@@ -18,10 +18,10 @@ const TentangKami = () => {
         className="w-full md:w-1/2 lg:w-1/3 rounded-lg mb-4 md:mb-0"
       />
       <motion.div
-        variants={fadeIn("left", 0.7)}
+        variants={fadeIn("left", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="md:ml-6"
       >
         <div className="text-text">

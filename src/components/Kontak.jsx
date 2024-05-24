@@ -13,20 +13,28 @@ const Kontak = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center ">
-        <div>
+        <a
+          className="hover:scale-110 duration-500"
+          href="https://wa.me/6285971104154?text=Hallo, yang montok ready ga?"
+          target="_blank"
+        >
           <div className="flex justify-center items-center mb-4">
             <FaWhatsapp className="text-7xl text-green-500" />
           </div>
           <h3 className="font-semibold">WhatsApp</h3>
           <p>085971104154</p>
-        </div>
-        <div>
+        </a>
+        <a
+          className="hover:scale-110 duration-500"
+          href="https://wa.me/6285971104154?text=Hallo, yang montok ready ga?"
+          target="_blank"
+        >
           <div className="flex justify-center items-center mb-4">
             <FaPhoneAlt className="text-7xl text-red-500" />
           </div>
           <h3 className="font-semibold">Telepon</h3>
           <p>085971104154</p>
-        </div>
+        </a>
         <div>
           <div className="flex justify-center items-center mb-4">
             <FaMapMarkerAlt className="text-7xl text-gray-500" />

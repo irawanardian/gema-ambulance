@@ -35,7 +35,7 @@ const Galeri = () => {
       </motion.div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-sm">
         {displayedImages.map((images, index) => (
-          <div key={index} className="w-full h-65 bg-gray-200">
+          <div key={index} className="w-full bg-gray-200">
             <img
               src={images}
               alt={`Galeri ${index}`}
