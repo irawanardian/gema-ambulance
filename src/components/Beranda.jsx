@@ -43,7 +43,7 @@ const Beranda = () => {
             <div>
               <button className="bg-[#DF0D86] py-2 px-4 transition-all duration-300 rounded text-white hover:text-white hover:bg-[#63208A]">
                 <a
-                  href="https://wa.me/6285971104154?text=Hallo, yang montok ready ga?"
+                  href="https://wa.me/6285971104154?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
                   target="_blank"
                 >
                   Hubungi Kami

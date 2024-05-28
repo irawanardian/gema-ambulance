@@ -54,7 +54,7 @@ const NavigationBar = () => {
           <div className="space-x-12 hidden md:flex items-center">
             <button className="bg-[#DF0D86] py-2 px-4 transition-all duration-300 rounded text-white hover:text-white hover:bg-[#63208A]">
               <a
-                href="https://wa.me/6285971104154?text=Hallo, Mau yang montok dong"
+                href="https://wa.me/6285971104154?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
                 target="_blank"
               >
                 Hubungi Kami

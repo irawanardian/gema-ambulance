@@ -15,7 +15,7 @@ const Kontak = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center ">
         <a
           className="hover:scale-110 duration-500"
-          href="https://wa.me/6285971104154?text=Hallo, yang montok ready ga?"
+          href="https://wa.me/6285971104154?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
           target="_blank"
         >
           <div className="flex justify-center items-center mb-4">
@@ -26,7 +26,7 @@ const Kontak = () => {
         </a>
         <a
           className="hover:scale-110 duration-500"
-          href="https://wa.me/6285971104154?text=Hallo, yang montok ready ga?"
+          href="https://wa.me/6285971104154?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
           target="_blank"
         >
           <div className="flex justify-center items-center mb-4">
