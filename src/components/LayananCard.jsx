@@ -1,14 +1,26 @@
 import React from "react";
 
-const LayananCard = ({ image, title, description, buttonText }) => {
+const LayananCard = ({
+  src,
+  alt,
+  onClose,
+  maxWidth = "50vw",
+  maxHeight = "50vh",
+}) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden w-full justify-center">
-      <img src={image} alt={title} className="w-full h-60 object-cover" />
-      <div className="p-4">
-        <h3 className="text-xl font-bold text-[#DF0D86] mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
-        <button className="w-full bg-[#63208A] text-white py-2 px-4 rounded-lg hover:bg-purple-800 transition duration-300">
-          {buttonText}
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+      <div className="relative">
+        <img
+          src={src}
+          alt={alt}
+          className={`max-w-full max-h-full`}
+          style={{ maxWidth, maxHeight }}
+        />
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 text-white bg-gray-800 rounded-full p-2"
+        >
+          &times;
         </button>
       </div>
     </div>

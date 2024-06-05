@@ -1,7 +1,7 @@
 import "./App.css";
 import Beranda from "./components/Beranda";
 import Footer from "./components/Footer";
-import Galeri from "./components/Galeri";
+import GaleriCard from "./components/GaleriCard";
 import Kontak from "./components/Kontak";
 import Layanan from "./components/Layanan";
 import NavigationBar from "./components/NavigationBar";
@@ -16,7 +16,7 @@ function App() {
       <TentangKami />
       <Layanan />
       <WhyGema />
-      <Galeri />
+      <GaleriCard />
       <Kontak />
       <Footer />
     </>
