@@ -9,7 +9,8 @@ const Kontak = () => {
           Kontak <span className="text-[#DF0D86]">GEMA</span>
         </h2>
         <p className="text-gray-700">
-          Info lengkap mengenai kontak dan alamat GEMA
+          Info lengkap mengenai kontak dan alamat Gifchari Emergency Medical
+          Ambulance
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center ">
