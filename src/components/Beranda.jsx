@@ -46,7 +46,7 @@ const Beranda = () => {
                   href="https://wa.me/6285971104154?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
                   target="_blank"
                 >
-                  Hubungi Kami
+                  HUBUNGI KAMI
                 </a>
               </button>
             </div>
