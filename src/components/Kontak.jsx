@@ -16,25 +16,25 @@ const Kontak = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center ">
         <a
           className="hover:scale-110 duration-500"
-          href="https://wa.me/6285971104154?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
+          href="https://wa.me/6287721607666?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
           target="_blank"
         >
           <div className="flex justify-center items-center mb-4">
             <FaWhatsapp className="text-7xl text-green-500" />
           </div>
           <h3 className="font-semibold">WhatsApp</h3>
-          <p>085971104154</p>
+          <p>087721607666</p>
         </a>
         <a
           className="hover:scale-110 duration-500"
-          href="https://wa.me/6285971104154?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
+          href="https://wa.me/6287721607666?text=Halo Ambulance GEMA, kami butuh respon cepat anda!"
           target="_blank"
         >
           <div className="flex justify-center items-center mb-4">
             <FaPhoneAlt className="text-7xl text-red-500" />
           </div>
           <h3 className="font-semibold">Telepon</h3>
-          <p>085971104154</p>
+          <p>087721607666</p>
         </a>
         <div>
           <div className="flex justify-center items-center mb-4">
