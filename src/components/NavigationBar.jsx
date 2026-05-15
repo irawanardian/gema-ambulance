@@ -1,24 +1,39 @@
 // src/components/NavigationBar.jsx
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo-gema-new.png";
 import { FaBars, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
-import { Link } from "react-scroll";
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { link: "Beranda", path: "beranda" },
-    { link: "Tentang Kami", path: "tentangKami" },
-    { link: "Layanan Kami", path: "layananKami" },
-    { link: "Galeri", path: "galeri" },
-    { link: "Kontak", path: "kontak" },
+    { link: "Beranda", path: "/" },
+    { link: "Tentang Kami", path: "/tentang-kami" },
+    { link: "Layanan Kami", path: "/layanan" },
+    { link: "Galeri", path: "/galeri" },
+    { link: "Kontak", path: "/kontak" },
   ];
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const desktopLinkClass = ({ isActive }) =>
+    `cursor-pointer rounded-full px-4 py-2 text-sm font-bold transition-all duration-300 hover:bg-white hover:text-[#DF0D86] lg:px-5 ${
+      isActive
+        ? "bg-white text-[#DF0D86] shadow-sm"
+        : "text-[#63208A]"
+    }`;
+
+  const mobileLinkClass = ({ isActive }) =>
+    `flex cursor-pointer items-center justify-between rounded-2xl px-4 py-3 text-sm font-extrabold transition-all duration-300 hover:bg-purple-50 hover:text-[#DF0D86] ${
+      isActive
+        ? "bg-[#63208A] text-white"
+        : "text-[#63208A]"
+    }`;
 
   return (
     <>
@@ -30,7 +45,7 @@ const NavigationBar = () => {
 
             <div className="relative flex items-center justify-between px-4 py-3 md:px-6">
               {/* Logo */}
-              <a href="/" className="flex items-center gap-3">
+              <NavLink to="/" onClick={closeMenu} className="flex items-center gap-3">
                 <div className="flex h-14 w-24 items-center justify-center rounded-2xl bg-white shadow-sm md:h-16 md:w-28">
                   <img
                     src={logo}
@@ -47,23 +62,19 @@ const NavigationBar = () => {
                     Emergency Medical Ambulance
                   </p>
                 </div>
-              </a>
+              </NavLink>
 
               {/* Desktop Menu */}
               <div className="hidden rounded-full border border-slate-100 bg-slate-50/80 p-1.5 shadow-inner md:flex">
                 {navItems.map(({ link, path }) => (
-                  <Link
+                  <NavLink
                     key={link}
-                    activeClass="!bg-white !text-[#DF0D86] shadow-sm"
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
                     to={path}
-                    className="cursor-pointer rounded-full px-4 py-2 text-sm font-bold text-[#63208A] transition-all duration-300 hover:bg-white hover:text-[#DF0D86] lg:px-5"
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    className={desktopLinkClass}
                   >
                     {link}
-                  </Link>
+                  </NavLink>
                 ))}
               </div>
 
@@ -122,20 +133,15 @@ const NavigationBar = () => {
 
           <div className="relative space-y-2">
             {navItems.map(({ link, path }) => (
-              <Link
+              <NavLink
                 key={link}
-                activeClass="!bg-[#63208A] !text-white"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
                 to={path}
                 onClick={closeMenu}
-                className="flex cursor-pointer items-center justify-between rounded-2xl px-4 py-3 text-sm font-extrabold text-[#63208A] transition-all duration-300 hover:bg-purple-50 hover:text-[#DF0D86]"
+                className={mobileLinkClass}
               >
                 <span>{link}</span>
                 <span className="h-2 w-2 rounded-full bg-[#DF0D86]/40" />
-              </Link>
+              </NavLink>
             ))}
 
             <div className="grid grid-cols-2 gap-3 pt-3">

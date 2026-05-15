@@ -1,81 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import LayananCard from "./LayananCard";
-
-import image1 from "../assets/1.emergencyResponse.jpg";
-import image2 from "../assets/2.fullMedis.jpg";
-import image3 from "../assets/pengantaranJenazah.jpg";
-import image4 from "../assets/4.petiJenazah.jpg";
-import image5 from "../assets/6.standByeEvent.jpg";
-import image6 from "../assets/antarJemputPasien.jpg";
 
 import { motion } from "framer-motion";
 import {
   FaArrowRight,
-  FaHeartPulse,
   FaTruckMedical,
-  FaUserDoctor,
-  FaBoxOpen,
-  FaCalendarCheck,
   FaWhatsapp,
 } from "react-icons/fa6";
 import { fadeIn } from "../variants";
-
-const services = [
-  {
-    src: image1,
-    alt: "Emergency Response",
-    title: "Emergency Response",
-    description:
-      "Layanan respon cepat untuk kebutuhan darurat dengan tim yang siap membantu secara sigap dan profesional.",
-    icon: FaHeartPulse,
-    badge: "Darurat",
-  },
-  {
-    src: image2,
-    alt: "Ambulance Full Medis",
-    title: "Ambulance Full Medis",
-    description:
-      "Ambulance dengan dukungan perlengkapan medis untuk membantu perjalanan pasien dengan lebih aman dan nyaman.",
-    icon: FaUserDoctor,
-    badge: "Full Medis",
-  },
-  {
-    src: image3,
-    alt: "Pengantaran Jenazah",
-    title: "Pengantaran Jenazah",
-    description:
-      "Layanan pengantaran jenazah dalam kota maupun luar kota dengan pelayanan yang tertib, sopan, dan penuh empati.",
-    icon: FaTruckMedical,
-    badge: "Dalam & Luar Kota",
-  },
-  {
-    src: image4,
-    alt: "Peti Jenazah",
-    title: "Peti Jenazah",
-    description:
-      "Penyediaan peti jenazah dan kebutuhan kedukaan lainnya untuk membantu keluarga dalam proses pemulasaraan.",
-    icon: FaBoxOpen,
-    badge: "Kedukaan",
-  },
-  {
-    src: image5,
-    alt: "Standby Event",
-    title: "Standby Event / Shooting",
-    description:
-      "Layanan standby ambulance untuk event, kegiatan lapangan, shooting, dan acara yang membutuhkan dukungan medis.",
-    icon: FaCalendarCheck,
-    badge: "Event",
-  },
-  {
-    src: image6,
-    alt: "Antar Jemput Pasien",
-    title: "Antar Jemput Pasien",
-    description:
-      "Layanan antar jemput pasien dalam kota maupun luar kota dengan perjalanan yang aman dan terkoordinasi.",
-    icon: FaTruckMedical,
-    badge: "Transport Pasien",
-  },
-];
+import { services } from "../data/services";
 
 function Layanan() {
   const [modalService, setModalService] = useState(null);
@@ -173,14 +107,13 @@ function Layanan() {
                       Pesan
                     </a>
 
-                    <button
-                      type="button"
-                      onClick={() => setModalService(service)}
+                    <Link
+                      to={`/layanan/${service.slug}`}
                       className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-[#63208A]/20 px-4 py-3 text-sm font-bold text-[#63208A] transition-all duration-300 hover:border-[#DF0D86] hover:bg-[#DF0D86]/10 hover:text-[#DF0D86]"
                     >
                       Detail
                       <FaArrowRight className="h-4 w-4" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>

@@ -1,23 +1,28 @@
 import "./App.css";
-import Beranda from "./components/Beranda";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
-import GaleriCard from "./components/GaleriCard";
-import Kontak from "./components/Kontak";
-import Layanan from "./components/Layanan";
 import NavigationBar from "./components/NavigationBar";
-import TentangKami from "./components/TentangKami";
-import WhyGema from "./components/WhyGema";
+import HomePage from "./pages/HomePage";
+import TentangKamiPage from "./pages/TentangKamiPage";
+import LayananPage from "./pages/LayananPage";
+import LayananDetailPage from "./pages/LayananDetailPage";
+import GaleriPage from "./pages/GaleriPage";
+import KontakPage from "./pages/KontakPage";
 
 function App() {
   return (
     <>
       <NavigationBar />
-      <Beranda />
-      <TentangKami />
-      <Layanan />
-      <WhyGema />
-      <GaleriCard />
-      <Kontak />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/tentang-kami" element={<TentangKamiPage />} />
+        <Route path="/layanan" element={<LayananPage />} />
+        <Route path="/layanan/:slug" element={<LayananDetailPage />} />
+        <Route path="/galeri" element={<GaleriPage />} />
+        <Route path="/kontak" element={<KontakPage />} />
+      </Routes>
+
       <Footer />
     </>
   );
